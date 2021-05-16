@@ -20,11 +20,6 @@ public class FXMLMenuSesionController implements Initializable {
     
     private Label label;
     
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
