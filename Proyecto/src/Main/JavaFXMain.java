@@ -15,16 +15,18 @@ import javafx.stage.Stage;
  *
  * @author User
  */
-public class Proyecto extends Application {
-    
+public class JavaFXMain extends Application {
+
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLMenuSesion.fxml"));
+
         Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
-        stage.show();
+        primaryStage.setTitle("Proyecto");
+        primaryStage.setTitle("Inicio de Sesion");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.show();
     }
 
     /**
@@ -33,11 +35,6 @@ public class Proyecto extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    public static void ombligo(){
+
     
-    
-    
-    
-    
-    }
 }
